@@ -44,18 +44,18 @@ function visualize(stations, MBTAlines){
 	// Specify directory with leaflet images
 	L.Icon.Default.imagePath = 'img';
 
-	// Option 1: Load and display a tile layer on the map (OpenStreetMap)
-	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-	}).addTo(map);
+	// // Option 1: Load and display a tile layer on the map (OpenStreetMap)
+	// L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  	// attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	// }).addTo(map);
 
 
 	// Option 2: Load and display a tile layer on the map (Stamen)
-	// L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
-	// 	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-	// 	subdomains: 'abcd',
-	// 	ext: 'png'
-	// }).addTo(map);
+	L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
+		attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+		subdomains: 'abcd',
+		ext: 'png'
+	}).addTo(map);
 
 
 	// Option 3: Load and display a tile layer on the map (Carto)
